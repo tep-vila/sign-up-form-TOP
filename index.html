@@ -7,15 +7,8 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- Photo by <a href="https://unsplash.com/@shots?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
-        
-        Christian Ang
-
-    </a> on <a href="https://unsplash.com/photos/cars-on-road-near-buildings-during-daytime-SZKn8dUagjc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-    *for credits*
-   -->
-    <div class="display">
-      <div class="img-container">
+    <div class="side-bar">
+      <div class="logo-container">
         <img src="" alt="" />
         <p class="app-name">Barangay 418</p>
       </div>
@@ -46,26 +39,54 @@
       <form action="" method="post" id="signup">
         <div class="form">
           <div class="input">
-            <input type="text" name="name" id="name" /><label for="name"
-              >First name</label
+            <input
+              type="text"
+              name="first_name"
+              id="first_name"
+              required
+            /><label for="name">First name</label>
+          </div>
+
+          <div class="input">
+            <input type="text" name="last_name" id="last_name" required /><label
+              for="last_name"
+              >Last name</label
             >
           </div>
+
           <div class="input">
-            <input type="text" /><label for="">Last name</label>
+            <input
+              type="email"
+              name="user_email"
+              id="user_email"
+              required
+            /><label for="user_email">Email </label>
           </div>
+
           <div class="input">
-            <input type="text" /><label for="">Email </label>
+            <input
+              type="password"
+              name="user_password"
+              id="user_password"
+              required
+            /><label for="user_password">Password </label>
           </div>
+
           <div class="input">
-            <input type="text" /><label for="">Password </label>
+            <input
+              type="password"
+              name="confirm_password"
+              id="confirm_password"
+              required
+            /><label for="confirm_password">Confirm password </label>
           </div>
+
           <div class="input">
-            <input type="text" /><label for="">Confirm password </label>
-          </div>
-          <div class="input">
-            <input type="text" /> <label for="">Enter code </label>
+            <input type="text" name="code" id="code" required />
+            <label for="code">Enter code </label>
           </div>
         </div>
+
         <button type="submit">Create account</button>
         <p class="account-existing">
           Already have an account? <span><a href="">Log-in</a></span>
