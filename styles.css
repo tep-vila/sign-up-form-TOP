@@ -1,6 +1,4 @@
-/*  GENERAL STYLING 
-for fonts - AleoRegular
-*/
+/*  GENERAL STYLING */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,4 +9,32 @@ a {
   color: black;
 }
 
-/*  */
+body {
+  min-height: 100vh;
+  display: flex;
+}
+/*  FOR FONTS */
+@font-face {
+  font-family: "redwing";
+  src: url(fonts/Redwing-Light.woff2);
+}
+
+@font-face {
+  font-family: "CrimsonPro";
+  src: url(fonts/CrimsonPro-Regular.woff2);
+}
+
+/*SIDEBAR STYLING  */
+.side-bar {
+  background-image: url(assets/manila-pic.jpg);
+  background-size: cover;
+  box-shadow: 0 0 20px rgb(0, 0, 0);
+
+  width: 35vw;
+}
+
+/* FOR MAIN CONTENT  */
+
+.main-content {
+  padding-left: 4vw;
+}
