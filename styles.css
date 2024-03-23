@@ -130,6 +130,15 @@ input:focus {
   border: 3px solid black;
 }
 
+input:invalid:focus,
+input:invalid:hover {
+  border: 3px solid red;
+}
+input:valid:focus,
+input:valid:hover {
+  border: 3px solid green;
+}
+
 .input {
   position: relative;
   width: 30vw;
@@ -151,6 +160,32 @@ input:focus + label {
   color: white;
   padding: 0.2vh 0.2vw;
   border-radius: 2px;
+}
+
+button {
+  font-family: inherit;
+  padding: 1.1vh 1.2vw;
+  border-radius: 5px;
+  border: 1px solid black;
+  background-color: #596d48;
+  color: white;
+
+  font-size: 1.3rem;
+
+  margin: 2vh 0 3vh 0;
+
+  box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.708);
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+button:active {
+  box-shadow: none;
+  transform: translate3d(3px, 3px, 0);
+}
+
+form p {
+  font-family: inherit;
+  font-size: 1.2rem;
 }
 
 /* FOR INPUT ANIMATION (?) */
